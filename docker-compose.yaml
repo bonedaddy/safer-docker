@@ -2,7 +2,7 @@ version: "3.5"
 services:
     SERVICE_NAME:
         image: IMAGE_NAME
-        restart_true:
+        restart: true
         read_only: true
         cap_drop:
             - ALL
