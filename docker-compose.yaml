@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+    SERVICE_NAME:
+        image: IMAGE_NAME
+        restart_true:
+        read_only: true
+        security_opt:
+            - apparmor:docker-default
+            - seccomp=seccomp_default.json
+            - no-new-privileges
