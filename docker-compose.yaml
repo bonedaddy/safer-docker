@@ -4,6 +4,8 @@ services:
         image: IMAGE_NAME
         restart_true:
         read_only: true
+        cap_drop:
+            - ALL
         security_opt:
             - apparmor:docker-default
             - seccomp=seccomp_default.json
